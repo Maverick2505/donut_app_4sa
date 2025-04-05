@@ -6,10 +6,14 @@ class DonutTab extends StatelessWidget {
 //list of donuts
   final List donutsOnSale = [
     // [ donutFlavor, donutStore, donutPrice, donutColor, imageName ]
-    ["Ice Cream", "Krispy Kreme", "36", Colors.blue, "lib/images/icecream_donut.png"],
-    ["Strawberry",  "Timizin Donuts","45", Colors.red, "lib/images/strawberry_donut.png"],
-    ["Grape Ape", "Morayta Donuts","84", Colors.purple, "lib/images/grape_donut.png"],
-    ["Choco", "Slowson Donuts","95", Colors.brown, "lib/images/chocolate_donut.png"],
+    ["Glaciada", "Krispy Kreme", "36", Colors.blue, "lib/images/donuts/glaciada.png"],
+    ["Strawberry",  "Timizin Donuts","45", Colors.red, "lib/images/donuts/Pink.png"],
+    ["Rellena Manzana", "Morayta Donuts","40", Colors.purple, "lib/images/donuts/rellena.png"],
+    ["Chocolate", "Slowson Donuts","30", Colors.brown, "lib/images/donuts/chocolate.png"],
+    ["Bites", "Bolitas Donuts","40", Colors.grey, "lib/images/donuts/bites.png"],
+    ["Glaciado Blanco", "LA Dona","30", Colors.orange, "lib/images/donuts/blanca.png"],
+    ["Brownie", "Krispy Kreme","35",  Colors.pink, "lib/images/donuts/brownie.png"],
+    ["Rellena Piña", "Morayta Donuts","40", Colors.yellow, "lib/images/donuts/piña.png"],
 ];
 
   DonutTab({super.key});
@@ -24,7 +28,7 @@ class DonutTab extends StatelessWidget {
         //Proporcionn ancho y alto
         childAspectRatio: 1/1.5),
       //¿Cuantos elementos? 
-      itemCount: 4,
+      itemCount: 8,
       padding: const EdgeInsets.all(12),
       //¿Que elemnto se contruira
       itemBuilder: (context, index) {

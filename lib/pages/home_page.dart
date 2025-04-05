@@ -16,11 +16,11 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
  List<Widget> myTabs= [
-  const MyTab(iconPath: 'lib/icons/donut.png',),
-  const MyTab(iconPath: 'lib/icons/burger.png',),
-  const MyTab(iconPath: 'lib/icons/smoothie.png',),
-  const MyTab(iconPath: 'lib/icons/pancakes.png',),
-  const MyTab(iconPath: 'lib/icons/pizza.png',),
+  const MyTab(iconPath: 'lib/icons/donut.png', label: 'Donut',),
+  const MyTab(iconPath: 'lib/icons/burger.png', label: 'Burger',),
+  const MyTab(iconPath: 'lib/icons/smoothie.png', label: 'Smoothie',),
+  const MyTab(iconPath: 'lib/icons/pancakes.png', label: 'Pancakes',),
+  const MyTab(iconPath: 'lib/icons/pizza.png', label: 'Pizza',),
  ];
  
   @override

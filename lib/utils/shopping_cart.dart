@@ -18,7 +18,7 @@ class ShoppingCart extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text("2 Items | \&45.00", style :TextStyle(
+                Text("2 Items | \$45.00", style :TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.bold,),),
                 Text("Delicery Charges Included")
