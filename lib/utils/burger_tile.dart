@@ -20,7 +20,7 @@ class BurgerTile extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(12.0),
       child: Container(
-        //color: donutColor[50],
+        //color: burgerColor[50],
         decoration: BoxDecoration(
           color: burgerColor[50],
           //Esquinas redondeadas
@@ -50,12 +50,12 @@ class BurgerTile extends StatelessWidget {
               ),
               
             ],),
-            //Donut price
+            //Burgert price
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal:24,vertical:12),
                 child: Image.asset(imageName),
               ),
-              //Donut Flavor text
+              //Burger Flavor text
               Container(
                 padding: const EdgeInsets.symmetric(vertical: 2, horizontal:15),
                 child: Text(
@@ -85,7 +85,7 @@ class BurgerTile extends StatelessWidget {
                 Padding(
                 padding: const EdgeInsets.symmetric(vertical: 2, horizontal: 15),
                     child:Icon(Icons.favorite_border_outlined,
-                      color: Colors.grey[800])
+                      color: Colors.red[800])
                 ),
                 Padding(
                   padding: const EdgeInsets.symmetric(vertical: 2, horizontal: 15),

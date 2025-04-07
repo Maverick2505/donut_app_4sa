@@ -1,15 +1,19 @@
-import 'package:donut_app_4sa/utils/donut_tile.dart';
+import 'package:donut_app_4sa/utils/smoothie_tile.dart';
 import 'package:flutter/material.dart';
 
 class SmoothieTab extends StatelessWidget {
 
 //list of donuts
-  final List donutsOnSale = [
-    // [ donutFlavor, donutStore, donutPrice, donutColor, imageName ]
-    ["Ice Cream", "Krispy Kreme", "36", Colors.blue, "lib/images/icecream_donut.png"],
-    ["Strawberry",  "Timizin Donuts","45", Colors.red, "lib/images/strawberry_donut.png"],
-    ["Grape Ape", "Morayta Donuts","84", Colors.purple, "lib/images/grape_donut.png"],
-    ["Choco", "Slowson Donuts","95", Colors.brown, "lib/images/chocolate_donut.png"],
+  final List smoothieOnSale = [
+    // [ smoothieFlavor, smoothieStore, smoothiePrice, smoothieColor, imageName ]
+    ["Platano", "53% natural", "60", Colors.yellow, "lib/images/smoothie/banana.png"],
+    ["Chamoyada",  "El Tajinazo","50", Colors.red, "lib/images/smoothie/chamoy.png"],
+    ["Frambuesa", "Morayta Smoothies","Gratis", Colors.purple, "lib/images/smoothie/frambuesa.png"],
+    ["Fresa", "53% natural","60", Colors.pink, "lib/images/smoothie/fresa.png"],
+    ["Kiwwi", "OXX0", "70", Colors.green, "lib/images/smoothie/kiwi.png"],
+    ["Mango",  "MANGOD","55", Colors.orange, "lib/images/smoothie/mango.png"],
+    ["Piña", "Morayta Smoothie","Gratis", Colors.yellowAccent, "lib/images/smoothie/piña.png"],
+    ["Sandia", "La Mejor","55", Colors.redAccent, "lib/images/smoothie/sandia.png"],
 ];
 
   SmoothieTab({super.key});
@@ -24,16 +28,16 @@ class SmoothieTab extends StatelessWidget {
         //Proporcionn ancho y alto
         childAspectRatio: 1/1.5),
       //¿Cuantos elementos? 
-      itemCount: 4,
+      itemCount: 8,
       padding: const EdgeInsets.all(12),
       //¿Que elemnto se contruira
       itemBuilder: (context, index) {
-        return DonutTile(
-          donutFlavor: donutsOnSale[index][0],
-          donutStore: donutsOnSale [index][1],
-          donutPrice: donutsOnSale[index][2],
-          donutColor: donutsOnSale[index][3],
-          imageName: donutsOnSale[index][4],
+        return SmoothieTile(
+          smoothieFlavor: smoothieOnSale[index][0],
+          smoothieStore: smoothieOnSale [index][1],
+          smoothiePrice: smoothieOnSale[index][2],
+          smoothieColor: smoothieOnSale[index][3],
+          imageName: smoothieOnSale[index][4],
         );
   });
   }

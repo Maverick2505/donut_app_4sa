@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 
-class PanTile extends StatelessWidget {
-  final String panFlavor;
-  final String panStore;
-  final String panPrice;
+class SmoothieTile extends StatelessWidget {
+  final String smoothieFlavor;
+  final String smoothieStore;
+  final String smoothiePrice;
   //dynamic porque sera de tipo color
-  final dynamic panColor;
+  final dynamic smoothieColor;
   final String imageName;
 
-  const PanTile({super.key,
-   required this.panFlavor,
-   required this.panStore, 
-   required this.panColor, 
-   required this.panPrice, 
+  const SmoothieTile({super.key,
+   required this.smoothieFlavor,
+   required this.smoothieStore, 
+   required this.smoothieColor, 
+   required this.smoothiePrice, 
    required this.imageName});
 
   @override
@@ -20,9 +20,9 @@ class PanTile extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(12.0),
       child: Container(
-        //color: panColor[50],
+        //color: smoothieColor[50],
         decoration: BoxDecoration(
-          color: panColor[50],
+          color: smoothieColor[50],
           //Esquinas redondeadas
           borderRadius: BorderRadius.circular(24)),
 
@@ -32,7 +32,7 @@ class PanTile extends StatelessWidget {
             children: [
               Container(
                 decoration: BoxDecoration(
-                  color: panColor[100],
+                  color: smoothieColor[100],
                   borderRadius: const BorderRadius.only(
                     bottomLeft: Radius.circular(24),
                     topRight: Radius.circular(24)
@@ -40,26 +40,26 @@ class PanTile extends StatelessWidget {
                 ),
                 padding: const EdgeInsets.symmetric(vertical: 2, horizontal:15),
                 child: Text(
-                  "\$$panPrice",
+                  "\$$smoothiePrice",
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 18,
-                    color: panColor[800]
+                    color: smoothieColor[800]
                   )
                   )
               ),
               
             ],),
-            //Pan price
+            //Smoothie price
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal:24,vertical:12),
                 child: Image.asset(imageName),
               ),
-              //Pan Flavor text
+              //Smoothie Flavor text
               Container(
                 padding: const EdgeInsets.symmetric(vertical: 2, horizontal:15),
                 child: Text(
-                  panFlavor,
+                  smoothieFlavor,
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 18,
@@ -70,7 +70,7 @@ class PanTile extends StatelessWidget {
               Container(
                 padding: const EdgeInsets.symmetric(vertical: 2, horizontal:15),
                 child: Text(
-                  panStore,
+                  smoothieStore,
                   style: TextStyle(
                     fontSize: 18,
                     color: Colors.black,

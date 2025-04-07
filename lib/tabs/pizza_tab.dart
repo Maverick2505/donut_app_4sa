@@ -1,15 +1,19 @@
-import 'package:donut_app_4sa/utils/donut_tile.dart';
+import 'package:donut_app_4sa/utils/pizza_tile.dart';
 import 'package:flutter/material.dart';
 
 class PizzaTab extends StatelessWidget {
 
 //list of donuts
-  final List donutsOnSale = [
-    // [ donutFlavor, donutStore, donutPrice, donutColor, imageName ]
-    ["Ice Cream", "Krispy Kreme", "36", Colors.blue, "lib/images/icecream_donut.png"],
-    ["Strawberry",  "Timizin Donuts","45", Colors.red, "lib/images/strawberry_donut.png"],
-    ["Grape Ape", "Morayta Donuts","84", Colors.purple, "lib/images/grape_donut.png"],
-    ["Choco", "Slowson Donuts","95", Colors.brown, "lib/images/chocolate_donut.png"],
+  final List pizzaOnSale = [
+    // [ pizzaFlavor, pizzaStore, pizzaPrice, pizzaColor, imageName ]
+    ["Aceitunas", "Mundo Aceituno", "90", Colors.blue, "lib/images/pizza/aceitunas.png"],
+    ["Champiñones",  "Timizin Pizzas","85", Colors.red, "lib/images/pizza/champiñones.png"],
+    ["Cuatro Sabores", "Maxima Pizza","120", Colors.purple, "lib/images/pizza/cuatro.png"],
+    ["Hawaina", "Piña tas","95", Colors.yellow, "lib/images/pizza/hawaiian.png"],
+    ["Carne Pastor", "Trompos", "120", Colors.red, "lib/images/pizza/pastor.png"],
+    ["Peperoni",  "Cesarin","70", Colors.blue, "lib/images/pizza/peperoni.png"],
+    ["Helado", "Morayta Pizza","99", Colors.purple, "lib/images/pizza/pizzahelado.png"],
+    ["Queso", "Quesos Pizza","95", Colors.brown, "lib/images/pizza/queso.png"],
 ];
 
   PizzaTab({super.key});
@@ -24,16 +28,16 @@ class PizzaTab extends StatelessWidget {
         //Proporcionn ancho y alto
         childAspectRatio: 1/1.5),
       //¿Cuantos elementos? 
-      itemCount: 4,
+      itemCount: 8,
       padding: const EdgeInsets.all(12),
       //¿Que elemnto se contruira
       itemBuilder: (context, index) {
-        return DonutTile(
-          donutFlavor: donutsOnSale[index][0],
-          donutStore: donutsOnSale [index][1],
-          donutPrice: donutsOnSale[index][2],
-          donutColor: donutsOnSale[index][3],
-          imageName: donutsOnSale[index][4],
+        return PizzaTile(
+          pizzaFlavor: pizzaOnSale[index][0],
+          pizzaStore: pizzaOnSale [index][1],
+          pizzaPrice: pizzaOnSale[index][2],
+          pizzaColor: pizzaOnSale[index][3],
+          imageName: pizzaOnSale[index][4],
         );
   });
   }

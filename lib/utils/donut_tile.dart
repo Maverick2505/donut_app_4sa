@@ -85,7 +85,7 @@ class DonutTile extends StatelessWidget {
                 Padding(
                 padding: const EdgeInsets.symmetric(vertical: 2, horizontal: 15),
                     child:Icon(Icons.favorite_border_outlined,
-                      color: Colors.grey[800])
+                      color: Colors.red[800])
                 ),
                 Padding(
                   padding: const EdgeInsets.symmetric(vertical: 2, horizontal: 15),
