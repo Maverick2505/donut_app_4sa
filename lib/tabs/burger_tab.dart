@@ -16,8 +16,6 @@ class BurgerTab extends StatelessWidget {
     ["Tripe Carne", "KingBurger","70", Colors.red, "lib/images/Burgers/triple.png"],
 ];
 
-  BurgerTab({super.key});
-
   @override
   Widget build(BuildContext context) {
     return GridView.builder(
